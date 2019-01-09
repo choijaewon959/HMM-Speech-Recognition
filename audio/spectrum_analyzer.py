@@ -7,7 +7,6 @@ import shutil
 import datetime
 from config import *
 
-
 audio = pyaudio.PyAudio()
 stream = audio.open(
     format = FORMAT,
@@ -51,4 +50,3 @@ ax.plot(spectrum_data_int, '-')
 x1,x2,y1,y2 = plt.axis()
 plt.axis((x1,x2, -500, 500))
 plt.show()
-
